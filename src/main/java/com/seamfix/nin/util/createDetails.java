@@ -31,7 +31,7 @@ public class createDetails {
     }
     @PostConstruct
     public void  createPhoneNumber(){
-        PhoneNumber oldPhoneNumber= phoneRepository.findByPhoneNumber("0903232321");
+        PhoneNumber oldPhoneNumber= phoneRepository.findByPhoneNumber("08033242886");
         Users users= userRepository.findFirstByCustomerName("Chukelu Chioma Rosemary");
         if(oldPhoneNumber==null){
             PhoneNumber phoneNumber=new PhoneNumber();

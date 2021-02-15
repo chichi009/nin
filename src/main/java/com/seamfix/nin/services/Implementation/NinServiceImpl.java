@@ -31,7 +31,7 @@ public class NinServiceImpl implements NinService {
            boolean ninTransac=validateService.transactNinNumber(requestDto.getPhoneNumber(),requestDto.getNinNumber());
              if(ninTransac){
                  ResponseDto outResponseDTO=new ResponseDto();
-                 outResponseDTO.setResponseMessage("Successfully Linked And A Charges Has Been Taken");
+                 outResponseDTO.setResponseMessage("Successfully Linked And Charges Taken");
                  outResponseDTO.setResponseStatus("SUCCESS");
                  return outResponseDTO;
              }

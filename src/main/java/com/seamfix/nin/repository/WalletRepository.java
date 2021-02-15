@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @Repository
 public interface WalletRepository extends JpaRepository<NairaWallet,Long> {
     @Transactional
-    @Query("update NairaWallet  u set u.availableAmount=:currentAmount,u.chargeAmount=:chargeAmount where u.users=:id")
+    @Query("update NairaWallet  u set u.availableAmount=:currentAmount,u.chargeAmount=:chargeAmount,u.debitAmount=:chargeAmount where u.users=:id")
     @Modifying
     void updateWallet(@Param( value="id") Users id,@Param(value="currentAmount") BigDecimal currentAmount,@Param(value="chargeAmount") BigDecimal chargeAmount);
     NairaWallet findByWalletRequestId(String walletId);

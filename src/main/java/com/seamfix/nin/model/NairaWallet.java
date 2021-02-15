@@ -11,7 +11,6 @@ public class NairaWallet extends AbstractEntity {
     private String     walletRequestId;
     private BigDecimal chargeAmount;
     private BigDecimal debitAmount;
-    private BigDecimal debitCurrency;
     private BigDecimal creditAmount;
     private BigDecimal availableAmount;
 
@@ -52,14 +51,7 @@ public class NairaWallet extends AbstractEntity {
     public void setDebitAmount(BigDecimal debitAmount) {
         this.debitAmount = debitAmount;
     }
-
-    public BigDecimal getDebitCurrency() {
-        return debitCurrency;
-    }
-
-    public void setDebitCurrency(BigDecimal debitCurrency) {
-        this.debitCurrency = debitCurrency;
-    }
+    
 
     public BigDecimal getCreditAmount() {
         return creditAmount;
