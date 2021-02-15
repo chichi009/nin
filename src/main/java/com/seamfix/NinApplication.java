@@ -1,4 +1,4 @@
-package com.nin.nin;
+package com.seamfix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.nin.nin;
+package com.seamfix;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
